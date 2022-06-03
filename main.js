@@ -1,3 +1,16 @@
+
+//  Here I attach a file where I take a closer look into arrow functions. 
+// Initially, I did not understand why arrow functions could not act as a true
+// substitute for traditional functions (with function keyword), so I did a little 
+// experiment to see how they differ.
+
+// Conclusion: arrow functions can be used in methods 
+// but when they are not declared within the object constructor, they do not bind correctly
+// to the object. Conversely, traditional functions do not have to be declared within the constructor.
+
+
+
+
 // Dealership class
 
 const Car = require("./Car.js");                         // importing car class
