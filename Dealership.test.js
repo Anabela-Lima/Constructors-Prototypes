@@ -6,10 +6,6 @@ const Dealership = require("./Dealership.js");
 const Customer = require("./Customer.js");    
 
 
-
-
-
-
 // Dealership method test 
 // let us group our tests using using "describe" keyword 
 
