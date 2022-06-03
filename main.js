@@ -44,8 +44,8 @@ const dealership= new Dealership2 ("test dealer", 2)               // this objec
 
 // lets see what each function returns when out dealership calls it
 
-// console.log(dealership.Arrow_function_test());  
-// console.log(dealership.Function_function_test());
+console.log(dealership.Arrow_function_test());  
+console.log(dealership.Function_function_test());
 
 
 // Arrow function output:
@@ -58,11 +58,11 @@ const dealership= new Dealership2 ("test dealer", 2)               // this objec
 // comments:
 
 // The arrow function output  is empty, thats because when we call an arrow function, it does not 
-// know where to bind itself to, and if we run this in the browser console, we will see that it will
+// know where to bind itself to, and if we run this in the browser console (see in main.screenshots), we will see that it will
 // actually return not the dealership object, but instead the window object i.e. the window itself in the browser
 
 // conversely, a traditional function will bind itself correctly to the object that called it 
-// in line 35, dealership calls the traditional function, and indeed, in line 42, we can see that 
+// in line 48, dealership calls the traditional function, and indeed, in line 54, we can see that 
 // the function returns the dealership object
 
 
@@ -126,7 +126,7 @@ console.log(dealer2.countCarsInStock_Function())           // printing output of
 // Dealership class
 
 
-const Dealership3 = function (dealerName, maxCars){      // we have a traditional function that takes two arguments, it is stored in Dealership3 variable, const means  cannot be reassigned but can its properties can be changed
+const Dealership3 = function (dealerName, maxCars){       // we have a traditional function that takes two arguments, it is stored in Dealership3 variable, const means  cannot be reassigned but can its properties can be changed
     this.dealerName = dealerName;                         // definining the first property using "this" keyword. i.e. stating that manunfacturer argument passed is the property for Dealership2
     this.maxCars = maxCars;
     this.carsInStock = [];                                // carsInStock is another property that is initiated with an empty array 
@@ -141,11 +141,14 @@ const Dealership3 = function (dealerName, maxCars){      // we have a traditiona
 }
 
 
-
 // instantiate Dealership3 object
 
 const dealer3= new Dealership3("Test dealer3", 4)
 
-// dealer3 call the arrow functions 
+// dealer3 call the arrow functions
+
 console.log(dealer3.experimentArrow())     // we expect this to return the object dealer3 + indeed it does- now arrow function is correctly binded to the object because we wrote it in the constructor 
 console.log(dealer3.countCarsInStock())  // we expect this to return the length of  dealer3 carInstock property - should b 0 because we havent actually added any cars to it- indeed it does
+
+
+
