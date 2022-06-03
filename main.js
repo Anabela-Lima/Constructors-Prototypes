@@ -113,7 +113,7 @@ console.log(dealer2.countCarsInStock_Function())           // printing output of
 // Dealership class
 
 
-const Dealership3 = function (dealerName, maxCars){      // we have a traditional function that takes two arguments, it is stored in Dealership2 variable, const means  cannot be reassigned but can its properties can be changed
+const Dealership3 = function (dealerName, maxCars){      // we have a traditional function that takes two arguments, it is stored in Dealership3 variable, const means  cannot be reassigned but can its properties can be changed
     this.dealerName = dealerName;                         // definining the first property using "this" keyword. i.e. stating that manunfacturer argument passed is the property for Dealership2
     this.maxCars = maxCars;
     this.carsInStock = [];                                // carsInStock is another property that is initiated with an empty array 
