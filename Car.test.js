@@ -18,7 +18,7 @@ describe('Car', () => {
         // When [Act]- when we call our Car constructor
         
         const actual = Car("Mercedes")      // we call the Car constructor function and pass in a manufacturer of "Mercedes" and store it in a variable "actual", this variable cannot be reassigned but can be modified
-        const expected = this.Mercedes         // we expect the constructor function to the function to return this.Mercedes and store it in a variable "expected", this variable cannot be reassigned but can be modified
+        const expected = this.manufacturer        // we expect the constructor function to the function to return this.Mercedes and store it in a variable "expected", this variable cannot be reassigned but can be modified
 
         // Then [Assert]- call Assertion method to assert that actual = expected
         expect(actual).toBe(expected);    
